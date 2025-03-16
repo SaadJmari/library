@@ -9,7 +9,33 @@
 </head>
 
 <body>
+    <div class="add-book">
 
+        <dialog>
+
+            <form action="" method="dialog">
+                <h2>Add your book</h2>
+                <p class="titleField">
+                    <label for="titleInput">Title: </label>
+                    <input type="text" name="titleInput" id="titleInput" required>
+                </p>
+                <p class="authorField">
+                    <label for="authorInput">Author: </label>
+                    <input type="text" name="authorInput" id="authorInput" required>
+                </p>
+                <p class="pagesField">
+                    <label for="pagesInput">Pages: </label>
+                    <input type="number" name="pagesInput" id="pagesInput" required>
+                </p>
+                <div>
+                    <button type="submit" class="add-btn" autofocus>Add</button>
+                    <button type="submit" class="close-btn">Close</button>
+                </div>
+            </form>
+        </dialog>
+        <button type="submit" class="new-book">New book</button>
+        <div class="library"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>

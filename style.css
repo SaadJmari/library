@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.add-book {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    background-color: rgba(236, 235, 233, 0.945);
+    height: 100vh;
+    padding: 20px;
+}
+
+.library {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.card {
+    box-shadow: 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.card:hover {
+    box-shadow: 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+dialog {
+    border-radius: 15px;
+    border: none;
+}
+
+.card p {
+    align-self: flex-start;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+form button,
+.new-book {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.add-btn {
+    background-color: #007bff;
+    color: white;
+    width: 100px;
+}
+
+.close-btn {
+    background-color: #dc3545;
+    color: white;
+    width: 100px;
+}
+
+form p {
+    display: grid;
+    gap: 5px;
+}
+
+.new-book {
+    background-color: rgb(16, 235, 8);
+    color: white;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    opacity: 0.8;
+}
