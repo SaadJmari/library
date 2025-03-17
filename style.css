@@ -71,8 +71,7 @@ form input:focus {
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-form button,
-.new-book {
+button {
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -87,7 +86,8 @@ form button,
     width: 100px;
 }
 
-.close-btn {
+.close-btn,
+.deleteBtn {
     background-color: #dc3545;
     color: white;
     width: 100px;
@@ -109,4 +109,30 @@ button:focus {
 
 button:hover {
     opacity: 0.8;
+}
+
+.custom-alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+}
+
+.toggleReadBtn {
+    background-color: #2196F3;
+    color: white;
+    transition: background-color 0.3s;
+    width: 100px;
+    margin-bottom: 5px;
+}
+
+.toggleReadBtn.unread {
+    background-color: #FFC107;
 }
