@@ -10,8 +10,8 @@ let myLibrary = []
 //dummy data
 let book1 = new Book("Harry Potter and the Philosopher's Stone", "J. K. Rolling", 223, true)
 let book2 = new Book("Harry Potter and the Chamber of Secrets", "J. K. Rolling", 352, false)
-let book3 = new Book("The Tainted Cup", "Robert Jackson Bennett", 432, true)
-let book4 = new Book("The Tainted Cup", "Robert Jackson Bennett", 432, true)
+let book3 = new Book("Under the Same Stars", "Libba Bray", 480, false)
+let book4 = new Book("Clockwork Constellation: Chrono Chaos", "Paul Michael Peters", 352, true)
 let book5 = new Book("The Tainted Cup", "Robert Jackson Bennett", 432, true)
 
 
@@ -94,16 +94,18 @@ addBookBtn.addEventListener("click", (event) => {
     const bookTitle = document.querySelector("#titleInput").value
     const bookAuthor = document.querySelector("#authorInput").value
     const bookPages = document.querySelector("#pagesInput").value
+    const bookRead = document.querySelector("#readInput").checked
 
     if (bookTitle == "" || bookAuthor == "" || bookPages == "") {
         alert("Please Fill In All Required Fields")
         return false;
     }
 
-    addBookToLibrary(bookTitle, bookAuthor, bookPages, true)
+    addBookToLibrary(bookTitle, bookAuthor, bookPages, bookRead)
     document.querySelector("#titleInput").value = ""
     document.querySelector("#authorInput").value = ""
     document.querySelector("#pagesInput").value = ""
+    document.querySelector("#readInput").checked = false
 
     dialog.close()
 })
